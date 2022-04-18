@@ -1,0 +1,304 @@
+* { box-sizing: border-box;}
+
+.contenedor{
+    width: 90%;
+    height: 80vh;
+    margin: 20px;
+    display: grid;
+    grid-template-areas:  
+    "nombre nombre nombre"
+    "menunav menunav menunav"
+    "section section section"
+    "footer footer footer";
+    gap: 10px;}
+
+.section{
+        grid-area: section;
+    }
+    
+.nombre{
+        grid-area: nombre;
+        text-align: center;
+        
+    }
+.menunav { 
+        grid-area: menunav;
+        font-family: 'Share', cursive;
+    }
+.footer{
+        font-size: 13px;
+        grid-area: footer;
+        background-color: white;
+    }
+
+.contenedor2{
+    width: 100%;
+    height: 80vh;
+    margin: 20px;
+    display: grid;
+    grid-template-areas:  
+    "titulo titulo titulo"
+    "menunav2 menunav2 menunav2"
+    "items items items"
+    "contenido contenido contenido"
+    "footer2 footer2 footer2";
+    gap: 10px;
+
+}
+.titulo{
+    grid-area: titulo;
+    font-size: 50px;
+}
+
+.menunav2 {grid-area: menunav2;
+    font-family: 'Share', cursive;
+}
+.items{grid-area: items;
+}
+
+.contenido{grid-area: contenido;
+    font-size: 20px;
+}
+.footer2{
+    grid-area: footer2;
+    background-color: rgb(255, 255, 255);}
+
+.contenedor3{
+    width: 100%;
+    height: 80vh;
+    margin: 20px;
+    display: grid;
+    grid-template-areas:  
+    "primero primero primero"
+    "menunav3 menunav3 menunav3"
+    "inquietudes2 inquietudes2 inquietudes2"
+    "formulario formulario formulario"
+    "footer3 footer3 footer3";
+    gap: 10px;
+
+}
+
+.primero{
+    grid-area: primero;
+}
+
+.menunav3{
+    grid-area: menunav3;
+    font-family: 'Share', cursive;
+}
+
+.inquietudes2{
+    grid-area: inquietudes2;
+}
+.footer3{
+    grid-area: footer3;
+    background-color: white;
+}
+
+h1 { font-family: 'Staatliches', cursive;
+    font-weight: normal;
+text-align: center;
+z-index: 1;
+font-size: 50px;}
+
+header {font-family: 'Share', cursive;
+align-items: center;}
+h2{
+    font-family: 'Staatliches', cursive;
+    font-weight: normal;
+text-align: center;
+font-size: 20px;}
+h3{font-family: 'Share', cursive;
+    text-align: center;}
+h4{
+    font-family: 'Staatliches', cursive;
+    color: black;
+    list-style: none;
+    text-align: center;}
+
+h5{
+    font-family: 'Staatliches', cursive;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: left;
+    margin: 50px;}
+
+h6{
+    font-size: 30px;
+    font-family: 'Staatliches', cursive;}
+
+
+
+body{
+    background-image: url("/media/laptop.jpg");
+    background-size: cover;
+    font-weight: bolder;
+    text-align: center;
+}
+
+body.contacto{
+    background-image: url("../media/laptop.jpg");
+    background-size: cover;
+    font-weight: bolder;
+    text-align: center;}
+
+.header{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center; }
+
+body{
+    margin: 0%;
+    background-color: rgb(236, 188, 210);}
+
+.menu{
+    list-style: none;
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+    z-index: 1 ;}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+    transition:all 200ms}
+
+.menu li:hover{
+    transform: scale(1,02);
+    border-radius: 100%;}
+.menu li a{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 5px;}
+
+ul ul{
+    position: absolute;
+    display: none;
+    padding: 20pxs;}
+
+ul ul li{
+    display: block;
+    transition: none;
+    transform: none;
+    font-size:10px ;
+    line-height: 10px;}
+
+ul li:hover ul{
+    display: block;
+    transform: none;}
+
+.contenedor {
+    font-size: larger;
+    text-align: left;
+    margin: 100px;
+    padding: 0%;}
+
+
+.fa-solid{
+    font-size: 30px;
+    }
+
+.texto{
+    color: rgb(211, 94, 141);}
+
+.items{
+    font-family: 'Share', cursive;
+    list-style: none;
+    background-color: white;
+    opacity: 70%;
+}
+
+.formulario{
+    grid-area: formulario;
+    margin: 100px;
+    text-align: center;}
+
+
+.instagram{
+    font-size: 70px;
+    text-align: left;
+    padding: 50px;
+    color: rgb(211, 94, 141);}
+
+.titulo{
+font-size: 50px;}
+
+.fotofoto {
+    transition: width 4s, border-radius 1s;}
+
+.fotofoto:hover{
+    border-radius: 50%;}
+
+.inquietudes{
+    font-size: 40px;}
+.logito{
+    font-size: 30px;}
+.consultar{
+    text-align: center;
+    font-family: 'Share', cursive;
+}
+
+.emoji{
+    font-family: 'Staatliches';
+    font-size: 30px;
+
+}
+
+@media only screen and (max-width: 600px) {
+    h1{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    h6{
+        font-size: 15px;
+    }
+    .emoji{
+        font-size: 20px;
+    }
+    .consultar{
+        font-size: 15px;
+    }
+    .instagram{
+        font-size: 20px;
+    }
+    .footer{
+        font-size: 10px;
+    }
+    .footer2{
+        font-size: 10px;
+    }
+    .menunav {
+        font-size: 15px;
+    }
+    .titulo{
+        font-size: 30px;
+    }
+    .menunav2{
+        font-size: 12px;
+    }
+    .items{
+        font-size: 13px;
+    }
+    .contenido{
+        font-size: 13px;
+        color: aliceblue;
+    }
+    .menunav3{
+        font-size: 13px;
+    }
+    .inquietudes{
+        font-size: 20px;
+    }
+    .logito{
+        font-size: 20px;
+    }
+    .footer3{
+        font-size: 10px;
+    }
+}
+
