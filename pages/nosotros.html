@@ -9,25 +9,47 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Share:wght@700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Share&family=Staatliches&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <link rel="stylesheet" href="../css/estilo.css">
     <link rel="shortcut icon" href="../media/android-chrome-192x192.png">
 </head>
 <body class="contacto">
     <div class="contenedor2" >
-
         <div class="titulo">
+            <h5>LELE DISEÑO INTEGRAL</h5>
             <a class= "Logo" href="../index.html"><img id="arriba" src="../media/nudo_infinito-removebg-preview.png" alt="LOGO nudo infinito" width="100px"></a>
-            <h2 class="titulo">LELE DISEÑO INTEGRAL</h2>
         </div>
-        
-        <nav class="menunav2">
-            <ul class="menu">
-                <li><a href="../index.html">HOME</a> | </li>
-                <li><a href="">NOSOTROS </a> |
-                </li>
-                <li><a href="Contacto.html">CONTACTO</a> </li>
-            </ul>
+        <nav class="navbar navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><h2 class="titulo">LELE DISEÑO INTEGRAL</h2></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MENU</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 menunav2">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">HOME</a> </li>   
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="">NOSOTROS </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="contacto.html">CONTACTO</a>
+                    </li>
+                    </ul>
+                    <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+            </div>
         </nav>
         
         <section class="items">
@@ -74,10 +96,9 @@
             </section>
         </div>
         <FOoter class="footer2">
-            
             <h4>2022-Lele Diseño Integral-cirsecret@gmail.com</h4></FOoter>
     </div>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     
 </body>
 

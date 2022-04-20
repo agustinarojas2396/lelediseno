@@ -48,6 +48,7 @@
 .titulo{
     grid-area: titulo;
     font-size: 50px;
+    
 }
 
 .menunav2 {grid-area: menunav2;
@@ -158,7 +159,8 @@ body{
     width: 90%;
     margin: 20px auto;
     text-align: center;
-    z-index: 1 ;}
+    z-index: 1 ;
+    color: black;}
 
 .menu li{
     display: inline-block;
@@ -301,4 +303,28 @@ font-size: 50px;}
         font-size: 10px;
     }
 }
+.navbar-nav{
+    text-align: center;
+    transition:all 200ms;
+    font-family: 'Share', cursive;
+}
+
+.navbar-nav li{
+    display: inline-block;
+    transition:all 200ms;
+}
+
+.navbar-nav li:hover{
+    transform: scale(1,02);
+    border-radius: 100%;}
+
+.navbar-nav li a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;}
+
+.logonudoinfinito{
+    margin-top: 3rem;
+}
+
 
